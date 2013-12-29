@@ -1,3 +1,4 @@
+// 
 // javascript: (function (j) { var s = document.createElement('script'); s.type = 'text/javascript'; s.src = j; document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
 
 document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/localhost:11188/scripts/douban.js');
@@ -21,9 +22,7 @@ document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/localho
 
     for (page = 1; page <= tpage; page++) {
         n = (page - 1) * 15;
-        var url = "/j/play_record?ck=" + get_cookie("ck") + "&spbid=" + encodeURIComponent(window.SP + get_cookie("bid")) + 
-
-"&type=liked&start=" + n;
+        var url = "/j/play_record?ck=" + get_cookie("ck") + "&spbid=" + encodeURIComponent(window.SP + get_cookie("bid")) + "&type=liked&start=" + n;
         console.log("n: %s", n);
         console.log("url: %o", url);
         display('please wait .. (' + n + '/' + tpage + ')');
