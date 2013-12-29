@@ -23,8 +23,8 @@
     for (page = 1; page <= tpage; page++) {
         n = (page - 1) * 15;
         var url = "/j/play_record?ck=" + get_cookie("ck") + "&spbid=" + encodeURIComponent(window.SP + get_cookie("bid")) + "&type=liked&start=" + n;
-        console.log("n: %s", n);
-        console.log("url: %o", url);
+        //console.log("n: %s", n);
+        //console.log("url: %o", url);
         display('please wait .. (' + n + '/' + tpage + ')');
         $.ajax({
             type: "GET",
