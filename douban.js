@@ -1,7 +1,7 @@
 // 
 // javascript: (function (j) { var s = document.createElement('script'); s.type = 'text/javascript'; s.src = j; document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
 
-document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/localhost:11188/scripts/douban.js');
+document.getElementsByTagName('head')[0].appendChild(s); })('https:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
 (function () {
     if (window.location.href != 'http://douban.fm/mine#!type=liked') {
         alert('please visit http://douban.fm/mine#!type=liked');
