@@ -3,16 +3,13 @@
 
 //document.getElementsByTagName('head')[0].appendChild(s); )('https:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
 (function () {
-    if (window.location.href != 'http://douban.fm/mine#!type=liked') {
-        alert('please visit http://douban.fm/mine#!type=liked');
-        window.location.href = 'http://douban.fm/mine#!type=liked';
+    if (window.location.href.replace(/^http.*:\/\//,'') != 'douban.fm/mine/?type=liked#!type=liked') {
+        alert('please visit https://douban.fm/mine/?type=liked#!type=liked');
+        window.location.href = 'https://douban.fm/mine/?type=liked#!type=liked';
         return;
     }
     
-    var count = $('#nav_liked').text();
-    count = count.replace("加", "");
-    count = count.replace("心", "");
-    count = count.replace("首", "");
+    var count = $('#record_viewer .header .info .total').text().replace(/\D+/g, '');
     console.log("总数: %s",count);
     var tpage = parseInt((count / 15), 10) + 1;
     console.log("总页数: %s",tpage);
