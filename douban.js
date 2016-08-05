@@ -1,7 +1,7 @@
-// 
-// javascript: (function (j) { var s = document.createElement('script'); s.type = 'text/javascript'; s.src = j; document.getElementsByTagName('head')[0].appendChild(s); })('http:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
-
-//document.getElementsByTagName('head')[0].appendChild(s); )('https:/' + '/github.com/solo7net/douban.fm/raw/master/douban.js');
+/**
+ * 导出豆瓣红心歌曲
+ * 
+ */
 (function () {
     if (window.location.href.replace(/^http.*:\/\//,'') != 'douban.fm/mine/?type=liked#!type=liked') {
         alert('please visit https://douban.fm/mine/?type=liked#!type=liked');
